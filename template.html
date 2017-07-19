@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script>
+            function setSign() {
+            var name = document.getElementById('name').value; 
+            var title = document.getElementById('title').value; 
+            var tel = document.getElementById('tel').value; 
+            var mail = document.getElementById('mail').value; 
+            var website = document.getElementById('website').value; 
+
+            document.getElementById('name2').textContent = name; 
+            document.getElementById('title2').textContent = title; 
+            document.getElementById('tel2').textContent = tel; 
+            document.getElementById('mail2').textContent = mail; 
+            document.getElementById('website2').textContent = website; 
+            event.preventDefault();
+            }
+        </script>
     </head>  
     <body>
-        <table border="0" cellspacing="0" cellpading="0" style="white-space:nowrap;width:440px!important;">
+        <form class="form-horizontal"> 
+            <div class="form-group">
+                <label class="control-label col-sm-1" for="name">Name</label>
+                <div class="col-sm-2">
+                <input type="text" class="form-control" name="name" id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-1" for="title">Title</label>
+                <div class="col-sm-2">
+                <input type="text" class="form-control" name="title" id="title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-1" for="tel">Phone</label>
+                <div class="col-sm-2">
+                <input type="text" maxlength="14" class="form-control" name="tel" id="tel">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-1" for="email">Mail</label>
+                <div class="col-sm-2">
+                <input type="email" class="form-control" name="mail" id="mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-1" for="website">Website</label>
+                <div class="col-sm-2">
+                <input type="url" class="form-control" name="website" id="website">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2">
+                <button type="submit" class="btn btn-default" onclick="setSign()">Créér</button>
+                </div>
+            </div>
+        </form>
 
+        <table border="0" cellspacing="0" cellpading="0" style="white-space:nowrap;width:440px!important;">
             <tr>
                 <td class="avatar"><img src="https://www.w3schools.com/w3css/img_avatar3.png" style="white-space:nowrap;border-right:1px solid #f1f1f1;padding-right: 12px;height: 100px;"></td>
                 <td class="content">
-                    <h1 class="name">John Doe</h1>
-                    <h4 class="title">Developer | <a href="www.github.com" style="white-space:nowrap;text-decoration: none; color: #333">www.github.com</a></h4>
-                    <h6 class="mail"><a href="mailto:john.doe@gmail.com@gmail.com" style="white-space:nowrap;text-decoration: none; color: #999">john.doe@gmail.com</a> | <span style="white-space:nowrap;text-decoration:none!important;color: #999!important">+91 999 911 9378</span></h6>
+                    <h1 class="name" id="name2"><span id="name2"></span></h1>
+                    <h4 class="title"><span id="title2"></span> | <a href="www.github.com" style="white-space:nowrap;text-decoration: none; color: #333"><span id="website2"></span></a></h4>
+                    <h6 class="mail"><a href="mailto:john.doe@gmail.com@gmail.com" style="white-space:nowrap;text-decoration: none; color: #999"><span id="mail2"></span></a> | <span style="white-space:nowrap;text-decoration:none!important;color: #999!important"><span id="tel2"></span></span></h6>
                     <div class="social">
-                        <a style="white-space:nowrap;display:inline-block;" href="http://dribbble.com/johndoe">
+                        <a href="http://dribbble.com/johndoe">
                             <img style="white-space:nowrap;width: 32px;height:32px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/dribbble_circle_color-32.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;" href="http://be.net/johndoe">
+                        <a href="http://be.net/johndoe">
                             <img style="white-space:nowrap;width: 30px;height:30px;" src="https://cdn2.iconfinder.com/data/icons/freebie-social-media-icons/32/behance.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;border-right: 1px solid #f1f1f1;padding-right: 5px" href="http://linkedin.com/in/johndoe">
+                        <a style="border-right: 1px solid #f1f1f1;padding-right: 5px" href="http://linkedin.com/in/johndoe">
                             <img style="white-space:nowrap;width: 32px;height:32px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-32.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;" href="http://facebook.com/johndoe">
+                        <a href="http://facebook.com/johndoe">
                             <img style="white-space:nowrap;width: 32px;height:32px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;" href="http://twitter.com/johndoe">
+                        <a href="http://twitter.com/johndoe">
                             <img style="white-space:nowrap;width: 32px;height:32px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-32.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;" href="http://plus.google.com/+johndoe">
+                        <a href="http://plus.google.com/+johndoe">
                             <img style="white-space:nowrap;width: 32px;height:32px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/google_circle_color-32.png">
                         </a>
-                        <a style="white-space:nowrap;display:inline-block;" href="http://pinterest.com/johndoe">
+                        <a href="http://pinterest.com/johndoe">
                             <img style="white-space:nowrap;width: 30px;height:30px;" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Pinterstt-32.png">
                         </a>
                     </div>
