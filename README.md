@@ -1,4 +1,4 @@
-# Email Signature :pencil2: :envelope: :boom:
+# Email Generator :pencil2: :envelope: :boom:
 Use the template to customize and create your own cool email signature.
 
 
