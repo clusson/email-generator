@@ -1,25 +1,35 @@
-.avatar{
+#Generic
+.body{
     white-space:nowrap;
+}
+
+.a{
+    display:inline-block;
+}
+.img{
+    width:32px;
+    height:32px;
+}
+
+#Specific
+
+.avatar{
     vertical-align:middle;
     width:113px
 }
 .content{
-    white-space:nowrap;
     font-family:Helvetica, Arial;
     padding-left: 10px;
     font-size: 14px;
     vertical-align:middle;
-    white-space:nowrap
 }
 .name {
-    white-space:nowrap;
     font-size:18px;
     color:#09c;
     line-height: 1;
     margin: 0 0 8px 0;
 }
 .title {
-    white-space:nowrap;
     font-size:14px;
     color:#333;
     line-height: 1;
@@ -27,7 +37,6 @@
     font-weight: 400;
 }
 .mail{
-    white-space:nowrap;
     font-size:14px;
     color:#999;
     line-height: 1;
@@ -35,10 +44,5 @@
     font-weight: 400;
 }
 .social{
-    white-space:nowrap;
     margin-top: 8px;
-}
-.social-icons :a{
-    white-space:nowrap;
-    display:inline-block;
 }
